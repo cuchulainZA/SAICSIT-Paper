@@ -1,0 +1,6 @@
+\section{Conclusion and recommendations}
+\label{sec5}
+
+In this paper NetFlow logs were used to analyse the effect of the Memcached \gls{drdos} attack on the \gls{sanren} infrastructure. Metrics from each phase of the attack was used to show the progression of the attack traffic over time, as well as the effect of applying software patches to the vulnerable systems. Sensors and classifiers developed during this research have been added to the \gls{sanren} \gls{csirt} tool-set for future attack analysis. 
+
+This paper showed how network flow analysis could be used to perform a post attack investigation and identify potential victims and aggressors. Network flow analysis identified key indicators for amplification attacks by providing the researchers a mechanism to compare data amplification ratios and provide alerts for possible amplification attacks. It is recommended that \gls{udp} traffic should be monitored for possible amplification attacks in future. All \gls{drdos} attacks listed by the US-\gls{cert}  \cite{USCert2018} utilise \gls{udp} traffic amplification. Due to \gls{udp}'s lack of source IP address verification, attribution of aggressors is speculative.

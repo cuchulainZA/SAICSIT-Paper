@@ -1,0 +1,13 @@
+\section{Introduction}
+\label{sec:intro}
+
+
+The \gls{sanren} \gls{csirt} supports research and education institutions within South Africa by providing security awareness training, security alerts, incident handling and knowledge sharing opportunities to the \gls{sanren} community. The \gls{sanren} \gls{csirt} is tasked with detecting network attacks and anomalies on the \gls{sanren} network and providing constituents with advice and recommended response actions to mitigate malicious activity (which could lead to cyber security incidents).
+
+On 28 February 2018 the world's larges \gls{ddos} attack was detected by Akamai, a \gls{ddos} mitigation firm \cite{kerbs2018Powerful}. According to Akamai the attack reached a peak of 1.3 \gls{tbps} against one of their clients\cite{Akamai2018Memcached}. The attackers used a reflective amplification attack, also known as a \gls{drdos}, to attack their targets. A \gls{drdos} attack uses weaknesses within various Internet protocols to generate large volumes of network traffic from trusted service providers \cite{gibson2002distributed}.  During the attack, the attackers used services exposed via the \gls{sanren} network to amplify their network traffic, causing a \gls{ddos} attack against their intended targets. A detailed description of the \gls{drdos} attack methodology and its impact will be presented in Section \ref{sec2}.
+
+Mitigation and detection techniques can be developed by analysing the behavioural pattern of these attacks. In this paper a postmortem analysis of the Memcached \gls{drdos} attack will be provided. The analysis will focus on the various phases of the attack and the steps taken by the \gls{sanren} \gls{csirt} to detect and mitigate the effect of the attack.
+
+ This paper is structured as follows. In Section \ref{sec2} an overview of \gls{drdos} attacks will be provided. The basic attack structure and methodology will be covered. In Section \ref{sec3} our analysis environment and data capture methodology will be described. In Section \ref{sec4} the attack phases of the Memcached attack will be analysed. In Section \ref{sec5} the conclusion and recommendation for future attack detection will be presented.
+
+
